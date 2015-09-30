@@ -1893,7 +1893,11 @@
 
   if (typeof window.define === 'function' && window.define.amd) {
     window.define(function () { return EpicEditor; });
-  } else {
+  }
+  else if (typeof module !== 'undefined' && typeof exports === 'object') {
+    module.exports = EpicEditor;
+  }
+  else {
     window.EpicEditor = EpicEditor;
   }
 })(window);

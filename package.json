@@ -1,6 +1,6 @@
 {
   "name": "epiceditor",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "author": "Oscar Godson <oscargodson@gmail.com> (http://oscargodson.com)",
   "description": "An Embeddable Markdown Editor",
   "devDependencies": {
@@ -12,6 +12,7 @@
     "marked": "0.3.3",
     "node-watch": "0.3.x"
   },
+  "main": "epiceditor/js/epiceditor.min.js",
   "keywords": [
     "embeddable",
     "markdown",
@@ -28,5 +29,6 @@
   "repository": "git@github.com:OscarGodson/EpicEditor.git",
   "scripts": {
     "test": "jake test"
-  }
+  },
+  "dependencies": {}
 }

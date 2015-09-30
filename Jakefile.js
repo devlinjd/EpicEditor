@@ -84,8 +84,8 @@ task('build', ['lint:editor'], function () {
     , srcDir = 'src/'
     , parser = process.env.parser ? process.env.parser : 'node_modules/marked/lib/marked.js'
     , srcPaths =
-      [ srcDir + 'editor.js'
-      , parser
+      [ parser
+      , srcDir + 'editor.js'
       ]
     , destPath = destDir + 'epiceditor.js'
     , destPathMin = destDir + 'epiceditor.min.js'
